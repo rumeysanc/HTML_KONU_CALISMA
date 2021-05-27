@@ -1,0 +1,198 @@
+
+HTML Nedir? 
+•HTML, Hyper Text Markup Language (Baglantili Metin Bicimlendirme Dili)kelimelerinin kısaltılmışıdır. 
+Html programlama dili degildir.
+HTML bir isaretleme dilidir, Web sayfalarinin olusturilmasinda kullanilir
+
+
+
+Eğer bir web sayfasına sağ tıklayıp “Kaynağı görüntüle” (inspect) komutunu çalıştırırsanız sayfayı oluşturan HTML kodlarını görebilirsiniz. 
+
+
+
+HTML sayfalarının dosya uzantısı .htm veya .html’dir. 
+•Oluşturduğunuz dosyanın içinde herhangi bir HTML kodu olmasa bile dosyayı .html uzantısı ile kaydederseniz o dosya gene HTML sayfası olur. 
+•Oluşturduğunuz web sayfasına çift tıklarsanız bilgisayarınızdaki varsayılan tarayıcı ile açılır. 
+=======================================================
+
+Html komutlarına tag denir.
+Taglar büyüktür küçüktür işaretlerinin arasına yazılır < >
+
+İstisnalar dışında tagların başlangıç ve bitişleri vardır. 
+Bitiş tagları «/» işareti ile belirtilir.
+Örnek: <b>Merhaba</b> 
+<p>Nasılsın</p>
+
+Bir HTML sayfasinin icerisinde ilk once <html> tag i olusturulur.
+<html> tagi bir Web sitesinde olmaz olmaz tagdir. bunun arasina yazacagimiz herseyi yaziyoruz 
+
+<html> : HTML tagi acilir
+
+</html> : HTML tagi kapatilir.
+
+================================
+ HTML sayfasinin icinde iki bolum vardir 
+1) <head >
+2) <body>
+
+<html>
+    <head> : head tagi acildi
+Web sayfasi ile alakali bilgilerin ve body bolumunden once calistirilmasi gerekenkodlarin bulundugu bolumdur
+=> Baslik eklenebilir 
+ <title> Baslik <title> tagi icne yazilir </title>
+=>sayfa aciklamasi
+=> tasatim kodlari
+=> java script kodlari eklenebilir
+    </head> :head tagi kapatildi
+        <body>  :body tagi acildi
+yazdigimiz kodlari ziyaretcilerin gordugu kisim(yani burada yazilanlar ziyaretciler tarafindan gorulur.
+Html elementlerinin olusturulup eklendigi bolumdur.ornegin resim link makale video gibi
+        </body>  :body tagi kapatildi
+</html>
+=========================================================
+Bir Etiketin Yapisi
+Herangi bir html elementinin icerisinde tag isminin disinda bazi ozellikler bulunabilir( bunlara : Attribute)
+ <p class= " " , id= " " style="" , title="" ...> Merhaba </p>
+burada class, id, style ,title birer attribute dur
+Ornek
+<a id="skiplink" tabindex="0" class="skip-link">Skip to main content</a>
+tag name: <a> </a>
+attribute name: id, tabindex, class
+========================================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+</body>
+</html>
+
+<!DOCTYPE html> 	Sayfanın HTML5 ile tasarlandığını belirtir. Sayfanın en başında bulunur. 
+
+<html></html> 	Sayfanın başlangıcını ve sonunu belirtir. 
+<head></head> 	Sunucu ve arama motorları ile ilgili bilgileri içerir. 
+<body></body> 	Ziyaretçiye gösterilecek içeriği barındırır. 
+
+<title></title> 	Sayfa ile ilgili açıklama barındırır.
+Sayfa açıldığında tarayıcı sekmesinde görünür. 
+<html lang= “en”> 	Sayfanın dilini belirtir. 
+turkce sayfalarda “tr” kullanılırken
+ İngilizce sayfalarda “en” kullanılır. 
+<html> tagının bir özelliğidir. Yani, ayrı bir komut değildir. 
+<meta charset="utf-8"> 	Türkçe karakterlerin düzgün görünmesini sağlar.
+ <head> tagı içine yazılmalıdır. 
+ ===========================================
+ETIKETLER
+
+<hx></hx> 	İçeriklerin başlık bilgisini barındırır. 
+Gazetelerdeki metinlerin manşetleri gibi,
+ başlık tagları da web sayfalarındaki metinlerin manşetleridir.
+ Okuyucuların dikkatini çekmek için kullanılır.
+ Başlık tagları büyükten küçüğe doğru
+ h1, h2, h3, h4, h5 ve h6 şeklinde kullanılabilir. 
+<p></p> 	Paragraf. icine metin yazilir
+<br/> 	Aynı paragrafın alt satırına geçmenizi sağlar. 
+bu hep etiketler arasinda alta gecmeye 
+hemde paragraf icinde alta gecmeyi saglar
+
+  <h1> Merhaba Html</h1>
+    <h2>Merhaba Html</h2>
+     <h3> Merhaba Html</h3>
+    <h4>Merhaba Html</h4>
+    <h5>Merhaba Html</h5>
+    <h6>Merhaba Html</h6>
+
+
+id 	benzersiz isim 	<h1 id= “baslik1”>…</h1> 	HTML tagına benzersiz bir isim verir. 
+class 	css sınıf adı 	<h2 class=“cerceve”>…</h2> 	HTML komutuna belirli bir ada sahip CSS kodu uygular. 
+style 	css komutu 	<h1 style=“ color:red”>…</h1> 	HTML komutu içinde CSS kodu yazılmasını sağlar. 
+title 	metin 	<h1 title= “Makale Başlığı”> … </h1> 	HTML komutu üzerine gidince bir kutu içinde açıklama metni görünmesini sağlar. 
+
+
+
+Semantik (Anlamsal) Web Nedir? 
+•Kelimelerin anlamlarını inceleyen bilim dalına Semantik denir. 
+•Semantik web, diğer anlamı ile anlamsal ağ, uygun içerikleri uygun HTML komutlarının içine koymak anlamına gelir. 
+•Google veya Yandex gibi arama motorları semantik web sayesinde arama yapan kullanıcılara en uygun içeriği sağlar. 
+
+
+•<form>, <table>, <head> ve <footer> gibi HTML komutları semantiktir çünkü komutun adından hem anlamı hem de işlevi ortaya çıkar. 
+•<span> ve <div> gibi komutlar ise semantik değildir. Sonuçta, arama motorları açısından daha zor anlaşılan içerikler sunarlar. 
+
+
+
+Semantik olarak tasarlanan sayfa içerikleri arama sonuçlarında daha üstte görünürler. 
+•Bu nedenle, genel sayfa yapısını tasarlarken aşağıdaki semantik web etiketleri ihmal edilmemeli ve içeriğe uygun olarak kullanılmalıdır: 
+•article 
+•section 
+•header 
+•nav 
+•aside 
+•footer 
+
+Semantik Sayfa Düzeni Etiketleri 
+Tag 	Açıklama 
+<article> 	Yorum, haber, forum gönderisi, blog gönderisi,
+ müzik veya video gibi içerikleri kapsar. 
+<section> 	Genelde benzer konuya sahip birden fazla 
+<article> etiketini barındırır. 
+<header> 	Bir sayfanın, makalenin veya bölümün başlık bilgisini kapsar. 
+
+<nav> 	Sayfa içine veya sayfa dışına link vermek için oluşturulan menüleri kapsar.
+ 
+<aside> 	Sayfaların sol ya da sağ kenarında bulunan menü v.b. 
+içerikleri barındıran bölümdür. 
+<footer> 	Herhangi bir sayfanın, makalenin, bölümün veya menünün 
+en altında bulunur ve genelde en yakın içeriğin 
+iletişim ve telif hakkı bilgilerini barındırır. 
+<figure> 	Fotoğraf, şekil, illüstrasyon gibi içerikleri ve
+ bu içeriklerle ilgili başlık bilgisini barındırır. 
+
+
+
+Genel Sayfa Düzeni 
+•Çok farklı sayfa tasarımları olmasına rağmen klasik bir sayfanın genel yapısı çoğunlukla yandaki gibidir. 
+•Bu tasarım ve etiketlerle arama motoruna sayfayla ilgili en doğru bilgi verilmiş olur. 
+
+ 
+ 
+
+
+Paragraf Oluşturma <p> 
+•Arama motorlarının en sevdiği içerik metinlerdir. O nedenle semantik bir etiket olan paragraf etiketi çok önemlidir. 
+•id özelliği kullanılarak benzersiz bir isim verilebilir ve bu isimle değişik CSS ya da Javascript komutları uygulanabilir. 
+•class özelliği kullanılarak da belli bir ada sahip CSS komut-grubu uygulanabilir. 
+•style özelliği ile doğrudan CSS kodu yazılabilir. 
+•<br> etiketi ile alt satıra geçilebilir. 
+ 
+
+
+Metin Biçimlendirme 
+•HTML4 ve önceki sürümlerde metin biçimlendirme HTML komutları ile yapılıyorken, HTML5 sürümünde CSS kodları kullanılır. 
+•Bununla birlikte aşağıdaki etiketlerle temel biçimlendirme işlemleri yapılabilir: 
+======
+•<b> ve <strong> etiketi metni kalınlaştırır. <strong> etiketi semantiktir. 
+=> ikisi de sonuçta yazının kalın görünmesini sağlar. Ayrıldıkları nokta şudur: <b> takısı sadece yazının stilini değiştirir. <strong> takısı ise, yazının stilini değiştirmekle kalmayıp, ona önem katar. Arama motorları sayfayı indekslerken <strong> takıları arasındaki kelimelerin, diğer kelimeler ile karşılaştırıldığında daha önemli olduğunu varsayar. Aynı şekilde, sayfayı bir okuma yazılımına okutursanız, <strong> takıları arasındaki kelimeleri daha yüksek sesle okur. Diğer yandan <b> takısının böyle bir işlevi yoktur, tek yaptığı yazıyı kalın göstermedir.
+===
+•<i> ve <em> etiketi metni eğer. <em> etiketi semantiktir. 
+======
+•<u> etiketi metnin altına çizgi koyar. 
+======
+•<mark> etiketi metni vurgular, fosforlu kalemle çizilmiş gibi yapar. 
+=====
+•<sub> ve <sup> etiketleri içeriği alt ve üst simge yapar.
+<p>Bu metin <sub>altsimge</sub> içeriyor.
+<p>Bu metin <sup>üstsimge</sup> içeriyor.
+ ===========
+•<code> etiketi metinleri Courier fontu ile farklı gösterir. 
+============
+•<pre> etiketi kodları tarayıcıda yazıldığı gibi gösterir. 
+=========================================================
+Span Komutu 
+•Bazen belli bir etiket içinde olmayan metinlere CSS veya Javascript komutu uygulamak isteriz. 
+•Bu durumda metin <span> etiketi içine alınır ve id veya class gibi özellikleri kullanılarak CSS kodu uygulanır. 
+ 
