@@ -192,6 +192,32 @@ Metin Biçimlendirme
 ============
 •<pre> etiketi kodları tarayıcıda yazıldığı gibi gösterir. 
 =========================================================
+<abbr> Kısaltmalar için, fare ile üzerine gelindiğinde açıklama yazısı çıkarır.
+
+<p>Bu dersimide <abbr title="Hypertext Markup
+Language">HTML</abbr> konusunu göreceğiz</p>
+============================================
+<del> 
+Yazının üstünü çizmek için kullanılır. Özellikle alışveriş sitelerindeki indirimsiz fiyatı gösterirken kullanılır.
+
+<del>52₺</del>
+=====================================
+<blockquote>
+Yazıya girinti verir. Genellikle alıntı yaparken kullanılan bir tagtır.
+
+<blockquote>Ağlasam sesimi duyar mısınız
+mısralarımda</blockqoute>
+
+======================================
+NOT
+<hr>
+Yatay çizgi oluşturmak için kullanılır
+========
+<!--    -->
+Tasarımcı html kodlarının içine kullanıcı tarafından görülemeyecek açıklama
+satırları koymak istediğinde kullanır.
+<!– bu satırlar ekranda gösterilmez -->
+=================================
 Span Komutu 
 •Bazen belli bir etiket içinde olmayan metinlere CSS veya Javascript komutu uygulamak isteriz. 
 •Bu durumda metin <span> etiketi içine alınır ve id veya class gibi özellikleri kullanılarak CSS kodu uygulanır. 
