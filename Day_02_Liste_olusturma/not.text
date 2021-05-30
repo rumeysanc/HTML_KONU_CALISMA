@@ -1,0 +1,82 @@
+Liste Olusturma
+
+HTML sayfalarında liste oluşturmak için <ol> ve <ul> tagları kullanılır. 
+=> Listedeki her bir elemanı göstermek için <li> tagı kullanılmaktadır. 
+
+•<ol> tagı ordered list kelimelerinin kısaltılmışıdır ve numaralı liste oluşturmak için kullanılır.
+<ol>
+<li>Beşiktaş</li>
+<li>Galatasaray</li>
+<li>Fenerbahçe</li>
+</ol>
+=======
+1.Beşiktaş
+2.Galatasaray
+3.Fenerbahçe
+
+ <ul> tagı unordered list kelimelerinin kısaltılmışıdır ve madde imli liste oluşturmak için kullanılır. 
+<ul>
+<li>Beşiktaş</li>
+<li>Galatasaray</li>
+<li>Fenerbahçe</li>
+</ul>
+
+. Beşiktaş
+. Galatasaray
+. Fenerbahçe
+=============================================
+<!-- * listenin 1’den değil de örneğin 3’ten başlamasını istiyorsanız <ol start= "3"> şeklinde bir kod yazabilirsiniz.  -->
+    <ol start="10">
+      <li>Galatasayar</li>
+      <li>Besiktas</li>
+      <li>FenerBahce</li>
+    </ol>
+
+     <!-- 10 Beşiktaş
+          11 Galatasaray
+          12 Fenerbahçe -->
+
+ ==============================================
+
+ <!-- * Listenizin artan değil de azalan olmasını istiyorsanız <ol reversed= "reversed"> şeklinde bir kod yazabilirsiniz.  -->
+    <ol reversed="reversed">
+      <li>Galatasayar</li>
+      <li>Besiktas</li>
+      <li>FenerBahce</li>
+     
+    </ol>
+     <!--3 Galatasayar
+          2 besiktas
+          1 Fenerbahçe -->
+ ================================== 
+ <!--* Eğer rakam yerine harf ya da Roma rakamlarının kullanılmasını istiyorsanız type özelliğine A, a, I veya i değerlerini verebilirsiniz. 
+  -->
+  <ol type="1 | A | a | I | i">
+      <li>Galatasayar</li>
+      <li>Besiktas</li>
+      <li>FenerBahce</li>
+    </ol>
+
+ <ul type="disc | square | circle">
+      <li>Beşiktaş</li>
+      <li>Fenerbahçe</li>
+      <li>Galatasaray</li>
+    </ul>
+    ===========================================
+
+     <!-- aciklamali liste olusturmak icin -->
+Bir açıklama listesi olusturak icin dl ,dt ve dd etiketleri kullanilir
+
+
+? <dl> Etiket, açıklama listesi tanımlar  
+  ? <dt> etiket terimi (ad) buraya yazilir
+    ? <dd> etiketin aciklamasini yazmamizi saglar -->
+
+    <dl>
+      <dt>Ankara</dt>
+      <dd>-Turkiye Baskenti</dd>
+      <dt>Atina</dt>
+      <dd>-Yunanistan Baskenti</dd>
+      <dt>Oslo</dt>
+      <dd>-Norvec Baskenti</dd>
+    </dl>
