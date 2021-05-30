@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resim ve Link ekleme</title>
+  </head>
+  <body id="ust">
+    <!-- ! LINK EKLEME -->
+    <!-- Linkler, sayfa içinde farklı konumlara veya sayfa dışındaki farklı adreslere gitmemizi sağlar. 
+ -->
+    <!-- * link vermek için 
+? <a href="hedef adres" > link adi </a> tagı 
+*kullanılır.
+ -->
+    <!-- ayni sayfada linki acar -->
+    <a href="https://www.google.com/">Google</a>
+    <br />
+    <!-- baska sayfada link acar -->
+    <a target="_blank" href="https://www.google.com/">Google</a>
+    <br />
+    <a target="_parent" href="https://www.google.com/">Google</a>
+    <br />
+    <a target="_self" href="https://www.google.com/">Google</a>
+    <br />
+    <a target="_top" href="https://www.google.com/">Google</a>
+    <br />
+    <!-- *========================================================== -->
+    <!-- ?Ziyaretçiyi sayfa başına göndermek için 
+    ? <body> etiketine asagidaki id eklenir 
+        ! < id="ust"> 
+    ? Sayfanın en altına  aşağıdaki kodu yazariz 
+      ! <a href="#ust">Sayfa Başına Git…</a> 
+     -->
+    <!-- *============================================= -->
+    <!-- sayfa ici link eklemek icin ornegi inceleyelim 
+-->
+    <a
+      href="http://127.0.0.1:5500/Day_03_Resim_Link_Ekleme/Sayfa_ici_link_uygulamasi/index.html"
+      >sayfa ici link ornegi</a
+    >
+    <br />
+    <!-- ASLINDA yukarida sayfalar arasi link vermeye ornek verdik -->
+    <a
+      href="http://127.0.0.1:5500/Day_03_Resim_Link_Ekleme/sayfadan_sayfaya_link_ornegi/Ana_Sablon.html"
+    >
+      sayfadan sayfaya link ornegi</a
+    >
+    <br />
+    <!-- * Ziyaretçilerin herhangi bir dosyayı indirebilmesi için  bir link oluşturulabilir: -->
+    <a target="_blank" href="indir/kiraz cicegi.jpeg">Resmi indir</a>
+    <br />
+    <a target="_blank" href="indir/Html SUNU.pdf">HTML Sunu Indir</a>
+    <br />
+    <!-- *   Eposta adresine link vermek için: -->
+    <a target="_blank" href="mailto:rumeysaince07@gmail.com">Eposta Gönder</a>
+    <br />
+    <!-- * Telefon numarasına link vermek için: -->
+    <a target="_blank" href="tel:+301234567898">Ara</a>
+    <br />
+    <!-- * Whatsapp numarasına link vermek için: -->
+    <a target="_blank" href="https://wa.me/301234567898">Whatsapp1</a>
+    <br />
+
+    <a target="_blank" href="https://wa.me/301234567898?text=Merhaba"
+      >Whatsapp2</a
+    >
+
+    <br />
+    <a href="#ust">Sayfa Başına Git…</a>
+  </body>
+</html>
