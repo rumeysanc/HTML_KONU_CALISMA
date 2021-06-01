@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Dünya haritası fotoğrafı bulup, üzerinde 3 ülkeye ait alanlar belirleyip, bu
+ülkeler tıklandığında farklı bağlantılar üzerinde açılmasını sağlayın
+Amazon.com
+Amazon.com.tr
+Amazon.com.uk -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practise 05 resim haritalama</title>
+  </head>
+  <body>
+    <img
+      src="resim/dunya.png"
+      alt="Dunya_haritasi"
+      width="1200"
+      height="609"
+      usemap="#DunyaHaritasi"
+    />
+    <map name="DunyaHaritasi">
+      <area
+        shape="rect"
+        coords="645,146,708,170"
+        href="https://www.amazon.com/"
+        title="Turkiye"
+      />
+      <area
+        shape="rect"
+        coords="223,46,410,115"
+        href="https://www.amazon.com.tr/"
+        title="Kanada"
+      />
+      <area
+        shape="rect"
+        coords="540,87,573,115"
+        href="https://www.amazon.com.uk/"
+        title="U.K"
+      />
+    </map>
+  </body>
+</html>

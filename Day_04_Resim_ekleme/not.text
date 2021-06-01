@@ -1,0 +1,10 @@
+Bir resmin farklı bölgelerine tıklanıldığında farklı adreslere gidilmesi isteniyorsa resim için bir map oluşturulur. Oluşturulan mapte link verilmek istenen bölgelerin koordinatları bulunur ve o koordinatlara tıklanıldığında gidilecek adres belirtilir.
+Yukarıdaki örneğimizde “harita” isimli bir map oluşturduk.
+snape özelliği ile resmi hangi geometrik şekilde parçalara ayıracağımızı belirtiyoruz.
+rect değeri ile resmi dikdörtgen şekilde bölgelere/parçalara ayırtmak istediğimizi belirttik.
+coords özelliğine resmin ilgili bölgesinin koordinatlarını giriyoruz.
+href özelliğine koordinatları belirtilmiş olan bölgeye tıklanıldığında gidilecek adresi yazıyoruz.
+Son olarak img etiketinin usemap özelliğine oluşturduğumuz Map’in adını girerek, map ile resmi ilişkilendirmiş oluyoruz.
+Kullanım 1: Map ile resim aynı html sayfası içerisinde yer alıyorsa, img etiketinin usemap özelliğine direk Map’in adı yazılır. (usemap=”#harita”)
+Kullanım 2: Map ve resim farklı html sayfalarında yer alıyorsa, img etiketinin usemap özelliğine önce Map’in bulunduğu sayfa sonrada Map’in adı yazılır. (usemap=”map.html#harita”)
+KOORDINATLAR BELIRTILIRKEN PAINT PROGRAMI kullanilabilir
