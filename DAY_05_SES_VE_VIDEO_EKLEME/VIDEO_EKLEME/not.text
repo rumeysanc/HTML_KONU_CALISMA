@@ -1,0 +1,35 @@
+video ekleme
+
+Video Etiketinin Özellikleri 
+•<video> etiketinde sıkça kullanılan özellikler. 
+•src: Video adresi. 
+•height: Video genişliği. 
+•width: Video yüksekliği. 
+•autoplay: Sayfa açıldığında video oynamaya başlar. 
+•controls: Kontrol düğmelerinin görünmesini sağlar. 
+•loop: Videonun sürekli oynamasını sağlar. 
+•preload: Play düğmesine basmadan, sayfa açıldığında video indirilmeye başlanır. 
+•muted: Videonun sesi kısılmış halde başlamasını sağlar. 
+
+MP4, WEBM, OGG uzantılı dosyalar kullanılabilir ancak, en çok
+desteklenen mp4 tür.
+Pexels.com ücretsiz video
+indirebileceğiniz bir sitedir.
+================================
+source : video nun farkli tarayicilarda calismasini saglayan etikrttir
+kullanimi asagidaki gibidir
+ <video width="320" height="240" controls>
+      <source
+        src="assets/video/Let It Go-Aldırma-Frozen-Türkçe-Turkish.webm"
+        type="video/webm"
+      />
+      <source
+        src="assets/video/Let It Go-Aldırma-Frozen-Türkçe-Turkish.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="assets/video/Let It Go-Aldırma-Frozen-Türkçe-Turkish.ogg"
+        type="video/ogg"
+      />
+    </video>
+====================================

@@ -1,0 +1,18 @@
+
+ses ekleme
+
+
+Ses dosyalarında <audio> etiketi kullanilir. 
+Ses Etiketinin Özellikleri 
+
+•<video> etiketinde sıkça kullanılan özellikler. 
+•src: Video adresi. 
+•height: Video genişliği. 
+•width: Video yüksekliği. 
+•autoplay: Sayfa açıldığında video oynamaya başlar. 
+•controls: Kontrol düğmelerinin görünmesini sağlar. 
+•loop: Videonun sürekli oynamasını sağlar. 
+•preload: Play düğmesine basmadan, sayfa açıldığında video indirilmeye başlanır. 
+•muted: Videonun sesi kısılmış halde başlamasını sağlar. 
+
+source ses dosyasnn farkli tarayicilarda calismasini saglayan etikrttir
