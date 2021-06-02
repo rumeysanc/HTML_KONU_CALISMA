@@ -33,3 +33,16 @@ kullanimi asagidaki gibidir
       />
     </video>
 ====================================
+<!--! Iframe -->
+    <!-- * Sayfa içinde farklı bir sitenin sayfasını görüntülemek için kullanılır. Harita ve
+*youtube videoları bu şekilde eklenir. iframe -->
+    <iframe
+      src="https://www.youtube.com/watch?v=SF84c-Ehxls"
+      title="youtube"
+    ></iframe>
+    <!-- !not youtube videolarini acmak ixin *"watch?v"  siliniryerine "embed" yazilir-->
+    ====================
+    <!-- youtube dan video almanin baska bir yolu da videonun altinda paylas bolumunden yerlestir secip koplayalayip html sayfamiza yapistirmak -->
+    =======================
+      <!-- google map e git ve nernin haritasinin almak istiyorsak secelim
+    sonra paylas i secip ikinci secenek olan haritayi yerlestiri secip kodu kopyalayip html sayfamiza yapistiralim -->

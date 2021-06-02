@@ -1,0 +1,57 @@
+TABLO OLUSTURMA
+ 
+Tablolar basitçe satır ve sütunlardan oluşur. Satır ve sütunların kesiştiği yerde adına hücre denilen kutucuklar oluşur. 
+==============================
+Tablo oluşturmak için <table> tagı kullanılır. Table ana taşıyıcıdır.
+Tablo ile alakalı diğer bütün taglar table tagının içine konulur.
+=================================
+table tag ida iki bolumden olusur 
+<thead> ve <tbody>
+•<thead>: başlık bölümünü belirtir 
+•<tbody>: veri bölümünü belirtir 
+yukaridaki tabloda "S.N.- Ürün Adı- Fiyat 
+baslik bolumudur diger kisimlar iceriktir
+
+   <table>
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+=============================
+•<tr> etiketi satırları, 
+<td> etiketi  body bolumu icindeki sütunları oluşturur 
+<th> etiketi head bolumu icindeki sutunlari olusturur
+=========
+<table border="2"> ==>border bana cizgi eklememi sagliyor
+=========
+•<caption>: tabloya başlık vermek için kullanılır 
+•<tfood>: tablonun alt bölümünü belirtir tbody den sonra gelmeli
+
+=======================
+
+Hücre Birleştirme 
+•Hücreleri birleştirmek için colspan veya rowspan komutu kullanılır. 
+•colspan: satırlardaki hücreleri birleştirir 
+•rowspan: sütunlardaki hücreleri birleştirir. 
+
+
+tbody, thead, tfoot kullanmak zorunlu değildir ancak CSS ile stil tanımlarken büyük kolaylık olur.
+====================
+
+cellpadding >>>
+Hücrelerdeki verilerin hucre duvarından olan uzaklıklarını belirler
+====
+cellspacing >>>
+Hücrelerin birbirinden olan uzaklığını belirler
+ 
+====
+width >>>
+Tablo ve hücre genişliklerini ayarlamak için kullanılır
+=====
+align >>>
+Hücre içindeki bilgilerin hücrenin neresine yanaşacağını belirler
+====
+border >>>
+Tablonun çerveve kalınlığını belirler 
+bgcolor >>>
+Tablo veya hücre arkasına renk vermek için kullanılır
+
