@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Olusturma</title>
+  </head>
+  <body>
+    <h1>Form Olusturma</h1>
+    <!--  klasik form  -->
+    <form name="ilk form" action="index.html" method="GET">
+      <label for="ad">Ad:</label>
+      <input type="text" id="ad" />
+    </form>
+    <br />
+    <!-- *======================= -->
+    <!--  autocomplete => Otomatik tamamlamam özelliğinin açık veya kapalı olacağını belirtir. 
+ -->
+    <!-- enctype =>Form verileri sunucuya gönderilirken nasıl kodlanacağını belirtir. 
+    bunu biz input type file secildigi zaman kullaniriz-->
+    <form
+      name="ilk form"
+      action="index.html"
+      method="GET"
+      autocomplete="on"
+      enctype="multipart/form-data"
+    >
+      <label for="ad">Ad:</label>
+      <input type="file" id="ad" />
+    </form>
+    <br />
+    <!-- *======================= -->
+    <form name="ilk form" action="index.html" method="GET">
+      <label for="ad">Ad:</label>
+      <input type="text" id="ad" />
+    </form>
+    <!-- <label> Kullanıcıya form elemanı ile ilgili bilgi vermek için kullanılan eleman. -->
+    <!-- labl for ile input id ayni olmali -->
+  </body>
+</html>

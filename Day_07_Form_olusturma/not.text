@@ -1,0 +1,38 @@
+Form oluşturma
+Kullanıcıdan bilgi almak için kullanılan yapılara form denir.
+Form oluşturmak için <form> tagı kullanılır. 
+   <form  name="" action="" method="">
+</form>
+name=> Formun ismini belirtir.
+action=> Form verilerinin nereye gönderileceğini belirtir.
+method => Form verileri gönderilirken hangi HTTP yönteminin kullanılacağanı belirtir. 
+iki yolu vardir. get ve post 
+get  =>
+posy=>
+Ayrica attribute olarak
+ autocomplete => Otomatik tamamlamam özelliğinin açık veya kapalı olacağını belirtir. 
+novalidate => Form verilerinin doğrulanmamasını belirtir.
+enctype =>Form verileri sunucuya gönderilirken nasıl kodlanacağını belirtir.
+=========================
+<label> Kullanıcıya form elemanı ile ilgili bilgi vermek için kullanılan eleman.
+<label> etiketi <input> etiketi için bir başlık tanımlar.
+<label> etiketi tarayıcılarda özel bir şekilde gösterilmez. Label etiketine tıklandığında giriş alanındaki kontrol değişir, kullanıcılar için kolaylık sağlar.
+<label> etiketinin for özelliği ile <input> etiketinin id özellikleri eşitlenmelidir.
+for=	Etiketin ait olduğu form kontrollünü belirtir.
+HTML Sözdizimi ve Özellikler
+<LABEL
+id=	Eşsiz kimliğini belirtir.
+class=	Sınıf adını belirtir.
+style=	CSS kuralları tanımlar.
+title=	Kısa bilgi belirtir.
+lang=	İçerdiği metnin lisanını belirtir.
+dir=	İçerdiği metnin yönünü belirtir.
+accesskey=	Klavye ile erişim sağlanacak harfi belirtir.
+for=	Etiketin ait olduğu form kontrollünü belirtir.
+</LABEL>
+=================================================
+<input >Kullanıcıdan bilgi almak için kullanılan form elemanlarının genel ismi
+
+HTML <input>öğesi en çok kullanılan form öğesidir.Bir <input>öğe, type attribute ne  bağlı olarak birçok şekilde görüntülenebilir 
+=========
+
