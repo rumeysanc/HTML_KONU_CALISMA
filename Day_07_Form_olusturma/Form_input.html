@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form input ornekleri</title>
+  </head>
+  <body>
+    <h1>form input type ornekleri</h1>
+    <h2>button</h2>
+    <form action="">
+      <input type="button" value="Buton" onclick="uyari()" />
+    </form>
+
+    <p>============================================================</p>
+    <h2>checkbox</h2>
+    <form action="">
+      <input type="checkbox" name="araclar" value="Bisiklet" /> Bisiklet<br />
+
+      <input type="checkbox" name="araclar" value="Araba" /> Araba
+    </form>
+    <p>ornek 2</p>
+    <form action="">
+      <label for="secim">
+        Aşağıdaki seçeneklerden size uygun olan(lar)ı seçiniz</label
+      >
+      <br />
+      <input type="checkbox" name="marka" value="fiat" /> Tofaş
+      <input type="checkbox" id="secim" name="marka" value="ford" checked />
+      Ford
+      <input type="checkbox" id="secim" name="marka" value="hyundai" /> Hundai
+      <input type="checkbox" id="secim" name="marka" value="opel" checked />
+      Opel
+      <input type="checkbox" id="secim" name="marka" value="renault" /> Renault
+    </form>
+    <p>============================================================</p>
+    <h2>color</h2>
+    <form action="">
+      <label for="renk">Renginizi seciniz</label>
+      <br />
+      <input type="color" id="renk" />
+    </form>
+    <p>============================================================</p>
+    <h2>Date</h2>
+    <form action="">
+      <label for="dogumtarihi"> dogum tarihinizi giriniz</label>
+      <br />
+      <input type="date" id="dogumtarihi" />
+    </form>
+    <p>============================================================</p>
+    <h2>Datetime</h2>
+    <form action="">
+      <label for="saat">kayit tarih ve saati giriniz</label>
+      <br />
+      <input type="datetime" id="saat" />
+    </form>
+    <p>============================================================</p>
+    <h2>Datetime_local</h2>
+    <form action="">
+      <input type="datetime-local" />
+    </form>
+    <p>============================================================</p>
+    <h2>EMAIL</h2>
+    <form action="">
+      <label for="email">mail adresinizi giriniz</label>
+      <input type="email" id="email" />
+    </form>
+    <p>============================================================</p>
+    <h2>file</h2>
+    <form enctype="multipart/form-data" method="POST">
+      <label for="myfile">Select a file:</label>
+      <input type="file" id="myfile" name="myfile" />
+    </form>
+    <p>============================================================</p>
+    <h2>hidden</h2>
+    <form>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" /><br /><br />
+      <input type="hidden" id="custId" value="3487" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>============================================================</p>
+    <h2>month</h2>
+    <form action="">
+      <input type="month" />
+    </form>
+    <p>============================================================</p>
+    <h2>number</h2>
+    <form action="">
+          <label for="sayi">siparis adetini giriniz(1 ile 5arasinda)/>
+      <br /><br />
+      <input type="number" id="sayi" min="1" max="5"/>
+
+    </form>
+    <p>============================================================</p>
+    <p>============================================================</p>
+    <p>============================================================</p>
+    <p>============================================================</p>
+    <h2>text</h2>
+    <input type="text" /> tek satırlık bir metin giriş alanı tanımlar :
+    <form>
+      <label for="fname">First name:</label><br />
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        size="10 "
+        title="Adinizi Giriniz"
+      /><br />
+      <label for="lname">Last name:</label><br />
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        size="10"
+        title="Soyadinizi giriniz"
+      />
+      <br />
+    </form>
+  </body>
+</html>
