@@ -1,0 +1,165 @@
+Form ogeleri
+1) *<label>
+ayri dosyada anlatildi
+2)*<input>
+ayri dosyada anlatildi
+3)*<select>
+⦁	 <option>
+⦁	<optgroup>
+
+<select> etiketi açılır listeler oluşturmak için kullanılır.
+ etiketi biri liste kutusu (listbox) diğeri aşağı açılır liste (drop-down list) tipinde olmak üzere iki farklı tipte seçim kutusu (select box) oluşturulmasını sağlar. Bu iki tip arasındaki tek fark size özelliği ile belirtilen seçim kutusu içinde gösterilecek seçenek miktarıdır. Liste elemanları optgroup ve option etiketleri ile tanımlanır.
+HTML <OPTION> etiketi, SELECT etiketi ile oluşturulan seçim kutusu (select box) içinde tek bir seçenek oluşturulmasını sağlar.
+<select>
+<option value="mercedes">Mercedes</option>
+<option value="audi">Audi</option>
+<option value="citroen">Citroen</option>
+<option value="peugeot">Peugeot</option>
+</select>
+ 
+
+<OPTGROUP> etiketi, SELECT etiketi ile oluşturulan seçim kutusu (select box) içinde OPTION etiketleri ile oluşturulan seçeneklerin mantıksal olarak gruplandırılmasını sağlar.
+<select>
+<optgroup label="Alman Araçları">
+<option value="mercedes">Mercedes</option>
+<option value="audi">Audi</option>
+  </optgroup>
+  <optgroup label="Fransız Araçları">
+    <option value="citroen">Citroen</option>
+    <option value="peugeot">Peugeot</option>
+  </optgroup>
+</select>
+ 
+
+<select> etiketi formlarda kullanıcı girişi ve bilgi toplamak için kullanılabilir.
+HTML Sözdizimi ve Özellikler
+<SELECT
+id=	Eşsiz kimliğini belirtir.
+class=	Sınıf adını belirtir.
+style=	CSS kuralları tanımlar.
+title=	Kısa bilgi belirtir.
+lang=	İçerdiği metnin lisanını belirtir.
+dir=	İçerdiği metnin yönünü belirtir.
+name=	Kontrol ismini belirtir.
+size=	Gösterilecek satır sayısını belirtir.
+multiple=	Birden fazla seçim yapılabileceğini belirtir.
+disabled=	Girişe kapalı (pasif) olduğunu belirtir.
+tabindex=	Sekme (tab) sırasını belirtir.
+>
+ornek
+<select size="4" multiple="multiple">
+      <option>Seçim-1</option>
+      <option>Seçim-2</option>
+      <option>Seçim-3</option>
+      <option>Seçim-4</option>
+      <option>Seçim-5</option>
+    </select>
+      burada size secim kutusunda kactane secenegin gorulecegini belirtiyor
+      multiple ise oklu secim yapabilmemizi sagliyor 
+      ctrl tusuna basarak coklu secim yapilabilr
+4)*<textarea>
+<textarea> etiketi çok satırlı metin giriş alanları tanımlar.
+Metin giriş alanına sınırsız karakter yazılabilir ve sabit genişlikli yazı tipi(Courier) ile görüntülenir.
+Metin alanının boyutu cols ve rows özellikleri ile belirtilebilir, CSS height ve width özellikleri daha kullanışlıdır.
+====
+HTML Sözdizimi ve Özellikler
+<TEXTAREA
+id=	Eşsiz kimliğini belirtir.
+class=	Sınıf adını belirtir.
+style=	CSS kuralları tanımlar.
+title=	Kısa bilgi belirtir.
+lang=	İçerdiği metnin lisanını belirtir.
+dir=	İçerdiği metnin yönünü belirtir.
+name=	Kontrolün ismini belirtir.
+disabled=	Girişe kapalı (pasif) olduğunu belirtir.
+readonly=	Kontrolün sadece okunabilir olduğunu belirtir.
+tabindex=	Sekme (tab) sırasını belirtir.
+accesskey=	Klavye ile erişim sağlanacak harfi belirtir.
+maxlenght= Metin alanına girilebilecek maksimum karakter sayısını belirtir.
+placeholder=Metin alanına girilmesi düşünülen bilgi ile ilgili ipucu belirtir.
+wrap= (hard -soft)	Metin alanının nasıl paketleneceğini belirtir.
+cols=	Karakter olarak genişliğini belirtir.
+rows=	Karakter olarak yüksekliğini belirtir.
+>
+yazi	Varsayılan içerik metnini belirler.
+</TEXTAREA>
+===
+ <textarea rows="3" cols="40">
+Çok satırlı metin giriş alanıdır, buraya kullanıcılar giriş yapabilir.
+</textarea
+ 
+    <form action="">
+ <label for="mesaj"> lutfen mesajinizi giriniz</label>
+ <br />
+<textarea id="mesaj" name="message" rows="10" cols="30">
+ The cat was playing in the garden.
+</textarea>
+ </form>
+
+5)*<button>
+<button> etiketi düğme tanımlar.
+<button> etiketi içerisine resim veya metinler eklenebilir, <input> etiketi ile oluşturulan düğmelerden en önemli farkı bu özelliktir.
+Her zaman <button> etiketinin type özelliğini tanımlayın (<button type="button"> vb.) . Farklı tarayıcılar varsayılan olarak başka bir değer atayabilir.
+Notlar ve İpuçları
+Eğer bir formda <button> etiketi tanımlanırsa, her tarayıcı farklı değerler atayabilir. Formlarda düğme oluşturulurken <input> etiketinin kullanılması daha uygundur.
+====
+INPUT type=button etiketi ile oluşturulan düğmeden biraz daha gelişmiş bir düğme (button) kontrolü oluşturulmasını sağlar. En önemli farkı BUTTON etiketi içinde bazı HTML etiketlerinin kullanılabilmesidir. Dolayısıyla IMG etiketi kullanılarak buton üzerinde göstermek için bir resim eklenebilir.
+<button type="button">Formu göndermek için<br />buraya tıklayınız.</button>
+button etiketinin type lari "button-menu-reset-submit"
+ 
+
+6)*<fieldset>
+⦁	7)*<legend>
+<fieldset> etiketi form içerisindeki ilişkili elemanları gruplandırır.
+<fieldset> etiketi ilişkili elemanları etrafına bir kutu çizer.
+Notlar ve İpuçları
+<legend> etiketi <fieldset> etiketi için bir başlık oluşturur.
+ <form action="/action_page.php">
+      <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="John" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+ 
+
+8)*<datalist>
+<datalist> etiketi <input> etiketi için önceden tanımlanmış açılabilir liste tanımlar.
+<datalist> etiketi "otomatik tamamlama" özelliğini tanımlar. Kullanıcı veri girişi yaptığında önceden tanımlanmış açılabilir liste gözükecektir.
+<datalist> etiketi <input> etiketine bağlanırken input etiketinin list özelliği kullanılır.
+ <form action="">
+      <label for="sec">Lutfen bir tarayici seciniz:</label> <br />
+      <br />
+      <input id="sec" list="tarayicilar" />
+      <datalist id="tarayicilar">
+        <option value="Internet Explorer"></option>
+
+        <option value="Firefox"></option>
+
+        <option value="Opera"></option>
+
+        <option value="Safari"></option>
+
+        <option value="Chrome"></option>
+      </datalist>
+    </form>
+ 
+sectikte sonra 
+ 
+==>burada dikkat etmemiz gereken input list="" tanimladiktan sonra datalist id bu list esit olmali. daha sonrada optin ile liste elemanlari hazirlanir
+9)*<output>
+<output> etiketi bir hesaplama sonucu tanımlar. (Scriptin oluşturduğu sonuç gibi)
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="range" name="a" value="50" />100 +
+      <input
+        type="number"
+        name="b"
+        value="50"
+      />
+      =<output name="x" for="a b"></output>
+    </form>
+ 
+

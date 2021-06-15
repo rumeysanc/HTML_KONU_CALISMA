@@ -13,18 +13,170 @@
 *<label>
 *<input>
 *<select>
+*<option>
+*<optgroup>
 *<textarea>
 *<button>
 *<fieldset>
 *<legend>
 *<datalist>
 *<output>
-*<option>
-*<optgroup>
+
   -->
-    <form>
-      <label>lutfen seciniz</label>
-      <select name="" id=""></select>
+    <p>================================================================</p>
+    <h2>select</h2>
+    <!-- <p>iki turlu yapilabilir</p> -->
+    <h3>option ile yaplan</h3>
+    <select>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+      <option value="citroen">Citroen</option>
+      <option value="peugeot">Peugeot</option>
+    </select>
+    <p>=======</p>
+    <h3>optgroup ile yapilan</h3>
+    <select>
+      <optgroup label="Alman Araçları">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </optgroup>
+      <optgroup label="Fransız Araçları">
+        <option value="citroen">Citroen</option>
+        <option value="peugeot">Peugeot</option>
+      </optgroup>
+    </select>
+    <p>=====</p>
+    <select>
+      <optgroup label="Üniversiteler">
+        <option>ODTÜ</option>
+        <option>Bilkent</option>
+        <option>Boğaziçi</option>
+      </optgroup>
+      <optgroup label="Liseler">
+        <option>Çınarlı EML</option>
+        <option>Atatürk EML</option>
+      </optgroup>
+    </select>
+    <p>ornek</p>
+    <select size="4" multiple="multiple">
+      <option>Seçim-1</option>
+      <option>Seçim-2</option>
+      <option>Seçim-3</option>
+      <option>Seçim-4</option>
+      <option>Seçim-5</option>
+    </select>
+    <p>
+      burada size secim kutusunda kactane secenegin gorulecegini belirtiyor
+      <br />
+      multiple ise oklu secim yapabilmemizi sagliyor <br />
+      ctrl tusuna basarak coklu secim yapilabilr
+    </p>
+
+    <p>================================================================</p>
+    <h2>textarea</h2>
+    <textarea rows="3" cols="40">
+Çok satırlı metin giriş alanıdır, buraya kullanıcılar giriş yapabilir.
+</textarea
+    >
+    <p>===</p>
+    <form action="">
+      <label for="mesaj"> lutfen mesajinizi giriniz</label> <br />
+      <textarea id="mesaj" name="message" rows="10" cols="30">
+    
+The cat was playing in the garden.
+</textarea
+      >
     </form>
+    <br />
+    <p>====</p>
+    <label for="mesaj"> lutfen mesajinizi giriniz</label> <br />
+    <textarea id="mesaj" name="message" rows="10" cols="30">
+    
+The cat was playing in the garden.
+</textarea
+    >
+
+    <p>================================================================</p>
+    <h2>button</h2>
+    <button type="button">Formu göndermek için<br />buraya tıklayınız.</button>
+    <br />
+    <p>===</p>
+    <button type="button">Butoncuk</button>
+    <br />
+
+    <p>================================================================</p>
+    <h2>fieldset</h2>
+
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="John" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <p>==========</p>
+    <h4>ornek</h4>
+    <form action="">
+      <fieldset>
+        <legend>Kişisel Bilgiler</legend>
+        <table>
+          <tr>
+            <td>Ad Soyad :</td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Doğum Tarihi :</td>
+            <td><input type="text" /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>İletişim Bilgileri</legend>
+        <table>
+          <tr>
+            <td>Telefonu :</td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Adresi :</td>
+            <td><textarea></textarea></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <p>==============================================================</p>
+    <h2>datalist</h2>
+    <form action="">
+      <label for="sec">Lutfen bir tarayici seciniz:</label> <br />
+      <br />
+      <input id="sec" list="tarayicilar" />
+      <datalist id="tarayicilar">
+        <option value="Internet Explorer"></option>
+
+        <option value="Firefox"></option>
+
+        <option value="Opera"></option>
+
+        <option value="Safari"></option>
+
+        <option value="Chrome"></option>
+      </datalist>
+    </form>
+
+    <p>==============================================================</p>
+    <h2>output</h2>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="range" name="a" value="50" />100 +
+      <input type="number" name="b" value="50" />
+      =<output name="x" for="a b"></output>
+    </form>
+
+    <p>==============================================================</p>
   </body>
 </html>
