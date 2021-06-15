@@ -1,0 +1,233 @@
+INPUT TYPES
+Type özelliği giriş alanının görüntelenme türünü belirtir.
+Varsayılan değer "text"'dir
+ 
+ 
+========
+1) <input type="button">
+button = Tıklanabilir düğme tanımlar. form kontrolü oluşturulmasını sağlar.
+<input type="button" value="Buton" onclick="uyari()">
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+HTML & JavaScript Olayları
+<INPUT type=button
+onclick=	Elemente klavye veya fare ile tıklandığında tetiklenir.
+ondblclick=	Elemente fare ile çift tıklandığında tetiklenir.
+onmousedown=	Element üzerinde fare tuşuna basıldığında tetiklenir.
+onmouseup=	     Basılı olan fare tuşu bırakıldığında tetiklenir.
+onmouseover=	Elementin kapladığı alana girildiğinde tetiklenir.
+onmousemove=	Element üzerinde fare işaretçisi hareket ettirildiğinde tetiklenir.
+onmouseout=	Elementin kapladığı alandan çıkıldığında tetiklenir.
+onkeypress=	Element üzerindeyken klavyeden bir tuşa basıldığında tetiklenir.
+onkeydown=	Element üzerindeyken klavyeden bir tuşa ilk basıldığında tetiklenir.
+onkeyup=	Basılı olan klavye tuşu bırakıldığında tetiklenir.
+onfocus=	Elemente odaklanıldığında tetiklenir.
+onblur=	Element odaklanmasını yitirdiğinde tetiklenir.
+onchange=	Giriş kontrolü içeriği değiştiğinde tetiklenir.
+/>
+2) <input type=checkbox> 
+etiketi, seçim kutusu (check box) form kontrolü oluşturulmasını sağlar.
+==> button ile ayni htimjava script ozellikleri alir
+Bazan, birden çok seçeneğin seçilmesi istenebilir. Bu durumda, TYPE değeri olarak checkbox kullanılır. Bunun kodları şöyledir:
+<INPUT TYPE=checkbox NAME="değişken_adı" CHECKED>
+Bir pazarlama şirketi, hangi yerli üretim otomobillerin tercih edildiğini (çok seçenekli olarak) araştıran bir anket formunu aşağıdaki gibi düzenleyebilir:
+Aşağıdaki seçeneklerden size uygun olan(lar)ı seçiniz:
+<INPUT TYPE=checkbox NAME=marka VALUE="fiat"> Tofaş
+<INPUT TYPE=checkbox NAME=marka VALUE="ford" CHECKED> Ford
+<INPUT TYPE=checkbox NAME=marka VALUE="hyundai"> Hundai
+<INPUT TYPE=checkbox NAME=marka VALUE="opel" CHECKED> Opel
+<INPUT TYPE=checkbox NAME=marka VALUE="renault"> Renault
+Bunun görüntüsü şöyle olacaktır:
+ 
+3)  <input type="color" 
+Renk seçici tanımlar.
+<form action="">
+      <label for="renk">Renginizi seciniz</label>
+      <br>
+      <input type="color" id="renk" />
+    </form>
+ 
+4)<input type="date"
+Tarih kontrolü tanımlar.(Saat hariç)
+ <form action="">
+      <label for="dogumtarihi"> dogum tarihinizi giriniz</label>
+      <br />
+      <input type="date" id="dogumtarihi" />
+    </form>
+ 
+5)<input type="datetime"
+Tarih ve saat kontrolü tanımlar.
+ <form action="">
+      <label for="saat">kayit tarih ve saati giriniz</label>
+      <br />
+      <input type="datetime" id="saat" />
+    </form>
+6) <input type="datetime-local" />
+Tarih ve saat kontrolü tanımlar.
+<form action="">
+      <input type="datetime-local" />
+    </form>
+
+ 
+7)<input type="email" 
+Bir e-posta adresinin girilmesi gereken alanları için kullanılmaktadır.
+Tarayıcı desteğine bağlı olarak, e-posta adresi gönderildiğinde otomatik olarak doğrulanabilir.
+bazı akıllı telefonlar e-posta türünü tanır ve e-posta girişiyle eşleşmesi için klavyeye ".com" ekler.
+ <form action="">
+      <label for="emil">mail adresinizi giriniz</label>
+      <input type="email"  required/>
+    </form>
+ 
+8)<input type="file"/> 
+etiketi, bir metin kutusu (textbox) ve gözat (browse) butonu ile sunucuya dosya gönderme/yükleme (upload) kontrolü oluşturulmasını sağlar.
+
+Dosyanın gönderilmesi için FORM etiketinin method özelliğinin post, enctype özelliğinin multipart/form-data olarak belirtilmiş olması gerekir.
+<form enctype="multipart/form-data" method="POST">
+      <label for="myfile">Select a file /label>
+      <input type="file" id="myfile" />
+    </form>
+ 
+9)HTML <INPUT type=hidden>
+Gizli bir giriş alanı (bir kullanıcı tarafından görülmez) tanımlar. 
+etiketi, sayfada gösterilmeyecek gizli bir değer tanımlamak için kullanılan bir form kontrolü oluşturulmasını sağlar.
+Gizli bir alan, web geliştiricilerinin bir form gönderildiğinde kullanıcılar tarafından görülemeyen veya değiştirilemeyen verileri içermesine olanak tanır.
+Gizli bir alan genellikle form gönderildiğinde güncellenmesi gereken veritabanı kaydını depolar.
+Not: Değer, sayfanın içeriğinde kullanıcıya gösterilmese de, herhangi bir tarayıcının geliştirici araçları veya "Kaynağı Görüntüle" işlevi kullanılarak görülebilir (ve düzenlenebilir). Gizli girdileri bir güvenlik biçimi olarak kullanmayın!
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" /><br><br>
+  <input type="hidden" id="custId"  value="3487">
+  <input type="submit" value="Submit">
+</form>
+10)<input type="month" />
+Ay ve yıl kontrolü tanımlar.
+<form action="">
+      <input type="month" />
+    </form>
+ 
+
+  11)  <input type="number" 
+Sayı girilmesi için bir alan tanımlar.
+hngi numaraların kabul edileceğine ilişkin kısıtlamalar da ayarlayabilirsiniz.
+<form action="">
+      <label for="sayi">siparis adetini giriniz(1 ile 5arasinda)>/
+      <br /><br />
+      <input type="number" id="sayi" min="1" max="5"/>
+    </form>
+ 
+12)<input type="password">
+etiketi, girilen karakterlerin maskelenerek gösterilmediği tek satırlık bir metin giriş kontrolü (password textbox) oluşturulmasını sağlar.
+<form action="">
+      <label for="sifre">
+        sifrenizi giriniz
+      </label>
+      <input type="password"  >
+    </form>
+ 
+
+13) <input type="radio">
+etiketi, birbirleri ile ilişkili fakat sadece birinin seçilebileceği radyo düğmesi (radio button / option button) oluşturulmasını sağlar.
+Kullanıcıyı tek bir seçim ile sınırlandırmak için <INPUT type=radio> etiketi ile oluşturulacak birbirleri ile alakalı bütün radyo düğmelerinin name özelliklerinin aynı olması gerekir.
+ <form>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender"   value="other"> 
+  <label for="other">Other</label>
+</form>
+ 
+14)<input type="range">
+kaydırma çubuğu (slider) tanımlar
+Varsayılan aralık 0 ila 100'dür. Ancak, min, max, ve stepöznitelikleriyle hangi sayıların kabul edileceğine ilişkin kısıtlamalar ayarlayabilirsiniz
+<form>
+  <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" min="0" max="50">
+</form>
+ 
+
+15) <input type="reset">
+Sıfırla düğmesi tanımlar. (reset)
+tüm form değerlerini varsayılan değerlerine sıfırlayacak bir sıfırlama düğmesi tanımlar
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</form>
+ 
+
+16) <input type="search">
+Arama için metin alanı tanımlar
+ <form>
+  <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch">
+    </form>
+17) <input type="submit">
+Gönder butonu tanımlar.
+kullanıcının formu göndermesini sağlayan bir düğme (button) kontrolü oluşturulmasını sağlar.
+Diğer buton kontrollerinden farklı olarak submit butonu oluşturulurken value değeri belirtilmediğinde tarayıcı otomatik olarak Submit, Gönder, Sorguyu Gönder vs. gibi tarayıcılara göre farklılık gösteren bir değer atar.
+Submit düğmesine basıldığında içinde bulunduğu FORM etiketinin içindeki kendisi de dahil tüm form kontrollerinin değerleri isim-değer (name-value) çifti şeklinde sunucuya gönderilir.
+Form işleyici, genellikle giriş verilerini işlemek için bir komut dosyası içeren bir sunucu sayfasıdır.
+Form işleyici, formun action özniteliğinde belirtilir :
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+18) <input type="tel">
+Telefon numarası girmek için bir alan tanımlar.
+<form action="">
+       <label for="tel">telefon numaraniz </label><br>
+       <input type="tel">
+     </form>
+pattern ile kisitlamalar yapilabilir
+  <form>
+  <label for="phone">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone"
+ pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</form>
+19)  <input type="text"> tek satırlık bir metin giriş alanı tanımlar :
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+ 
+20) <input type="time">
+Saat dilimi tanımlar.Kullanıcı bir süre (saat dilimi bir) seçmenize olanak sağlar.
+Tarayıcı desteğine bağlı olarak, giriş alanında bir zaman seçici görünebilir.
+ <form>
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" >
+</form>
+ 
+
+21) <input type="url">
+URL girmek için bir alan tanımlar.
+Tarayıcı desteğine bağlı olarak, url alanı gönderildiğinde otomatik olarak doğrulanabilir.
+
+Bazı akıllı telefonlar url türünü tanır ve url girişiyle eşleşmesi için klavyeye ".com" ekler.
+ <form action="">
+       <label for="u">Favori sayfanızı ekleyin:</label>
+      <input type="url"  id="u" name="favori">
+    </form>
+22)<input type="week">
+Hafta ve yıl kontrolü tanımlar.
+hangi haftada  ve yilda oldugumuzu secebilirizoldugumuzu
+ 
+23)<input type="image">
+Submit için bir görüntü tanımlar.
+resimli form gönderme butonu oluşturulmasını sağlar. Ayrıca, oluşturulan bu resimli butona tıklandığında resmin üzerinde tıklanan konumun soldan ve üstten uzaklıkları kontrol ismi ile birlikte isim.x ve isim.y şeklinde isimlendirilerek, sorgu parametresi olarak sayfa adresine eklenip sunucuya gönderilir. Eğer, INPUT type=image etiketi bir form etiketi içinde değilse içerdiği resim gösterilir fakat, üzerine tıklandığında herhangi bir işlem yapmaz.
+
+<form action="">
+            <input type="image" src="gonder.png" alt="Gönder" width="200px" height="180px">
+          </form>
+ 
+
+
+

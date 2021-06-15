@@ -1,0 +1,195 @@
+INPUT
+<input >Kullanıcıdan bilgi almak için kullanılan form elemanlarının genel ismi
+
+HTML <input>öğesi en çok kullanılan form öğesidir.Bir <input>öğe, type attribute ne  bağlı olarak birçok şekilde görüntülenebilir 
+=========
+input Attributes
+Name özelliği <input> etiketinin adını belirtir.
+Name özelliği form gönderildikten sonra form verilerine başvurmak için yada Javascript ile forma ulaşmak için kullanılır.
+===
+Accept özelliği sunucunun kabul ettiği dosya türlerini tanımlar.
+Not: Accept özelliği sadece type özelliği file değeri atanırsa kullanılabilir.
+Bu özellik doğrulama aracı olarak kullanılamaz. Yüklenen dosyalar sunucuda doğrulanmalıdır.
+ 
+===
+alt özelliği =>Görüntü ekranda gösterilmezse, görüntü yerine alternatif bir metin gösteriliceğini belirtir.
+Kullanıcı resimi görüntüleyemez ise (Yavaş bağlantı, src özelliğinde hata vb.) alt özelliği görüntü için alternatif bilgilendirici bir metin içerir.
+Not: Alt özelliği type="image" ile birlikte kullanılmalıdır.
+ 
+===
+Autocomplete özelliği=> bir giriş alanının otomatik tamamlama özelliğinin açık veya kapalı olacağını belirtir.
+Bu özellik on olarak tanımlandığında, daha önceden giriş alanına girilen veriler açılır bir şekilde gösterilir.
+Not: Autocomplete özelliği; type özelliği text, search, url, tel, email, password, datepickers, range ve color değerleri ile çalışır.
+ 
+=====
+Autofocus özelliği=> boolean türünde bir özelliktir.
+Bu özellik tanımlandığında sayfa yüklendikten sonra tanımlanan nesnenin odaklanacağını belirtir.
+ 
+Checked özelliği =>boolean türünde bir özelliktir.
+Bu özellik tanımlandığında, sayfa yüklendikten sonra seçilmesi istenen nesneler seçilir.
+Checked özelliği type="checkbox" veya type="radio" ile kullanılabilir.
+Checked özelliği sayfa yüklendikten sonra JavaScript kullanarakta seçili hale getirilebilir.
+ 
+===
+Form ozelligi =>Giriş alanının ait olduğu bir veya daha fazla form tanımlar.
+ 
+ornek
+ 
+===
+Formaction özelliği form verilerinin nereye gönderileceğini tanımlar. Bu özellik form'a ait action özelliğini geçersiz bırakır.
+Formaction özelliği sadece type="submit" ve type="image" giriş alanları ile kullanılabilir.
+ 
+ornek
+ 
+Formenctype özelliği form verilerinin sunucuya gönderilmeden önce nasıl kodlanması gerektiğini tanımlar. Bu özellik formun enctype özelliğini devre dışı bırakır.
+Formenctype özelliği sadece type="submit" ve type="image" olarak tanımlanmış giriş alanları ile kullanılabilir.
+ 
+ 
+====
+Formmethod özelliği form verileri gönderilirken hangi HTTP yönteminin kullanılacağını tanımlar. Bu özellik formun method özelliğini geçersiz kılar.
+Formmethod özelliği, type="submit" ve type="image" özellikleri tanımlanmadan kullanılamaz.
+Form verileri URL değişkenleri olarak gönderilecekse (method="get"), HTTP mesajı olarak gönderilecekse (method="post") kullanılır.
+GET metodu ile ilgili notlar
+- Form verilerini URL adresine isim/değer şeklinde ekler.
+- Gönderilen form verileri yer imlerine eklenebilir.
+- Url adresine dilediğiniz kadar veri ekleyebilirsiniz, fakat url uzunlukları tarayıcıdan tarayıcıya değişmektedir. Bu nedenle, tüm form verilerinin doğru transfer edildiğinden emin olamazsınız.
+- Get yöntemiyle hassas bilgi aktarması asla kullanılmaz. (Şifre, kişiye özel bilgiler vb. adres çubuğunda görünür olacaktır.)
+POST metodu ile ilgili notlar
+- Form verileri HTTP mesajı olarak gönderilir.
+- Gönderilen form verileri yer imlerine eklenemez.
+- Get işlemine göre daha güvenilir ve sağlıklıdır.
+- Gönderilecek verinin boyut ve uzunluk sınırlaması yoktur.
+ 
+===
+Formnovalidate özelliği boolean türünde bir özelliktir.
+Bu özellik tanımlandıysa, form verileri gönderilirken doğrulama gerekmediğini tanımlar. Bu özellik formun novalidate özelliğini geçersiz kılar.
+Formnovalidate özelliği sadece type="submit" değeri tanımlanmış giriş alanları için kullanılabilir.
+ 
+===
+Formtarget özelliği form verilerinin gönderildikten sonra yanıtın nerede görüntüleneceğini tanımlar.
+Formtarget özelliği formun target özelliğini geçersiz kılar.
+Formtarget özelliği, type="submit" veya type="image" özelliği tanımlanmadan kullanılamaz.
+ 
+====
+Height özelliği <input> etiketinin yüksekliğini belirtir.
+Not: Height özelliği sadece type="image" tanımlaması ile kullanılabilir.
+İpucu: Daima görüntüleriniz için yükseklik(height) ve genişlik(width) özelliklerini belirtin. Bu özellikler tanımlı ise sayfa yüklendiğinde görüntü için gerekli alan ayrılır. Özellikler tanımlanmaz ise tarayıcı resmin boyutunu algılamaz ve görüntü yüklenirken sayfa düzeninde kaymalar olabilir.
+=======
+List özelliği => <datalist> etiketinde önceden tanımlanmış açılır liste ile eşleştirileceğini belirtir.
+ 
+ 
+ readonly => bir girdi alanının salt okunur olduğunu belirtir.
+Salt okunur bir giriş alanı değiştirilemez (ancak, bir kullanıcı üzerine gelebilir, onu vurgulayabilir ve içindeki metni kopyalayabilir).
+Form gönderilirken salt okunur giriş alanının değeri gönderilecektir!
+====
+disabled =>, bir giriş alanının devre dışı bırakılması gerektiğini belirtir.
+Devre dışı bırakılmış bir giriş alanı kullanılamaz ve tıklanamaz.
+Formu gönderirken devre dışı bırakılmış bir giriş alanının değeri gönderilmeyecektir! 
+asgidaki gibi silinik gorunur
+ 
+========
+maxlength, bir giriş alanında izin verilen maksimum karakter sayısını belirtir.
+Not:  maxlength ayarlandığında, giriş alanı belirtilen karakter sayısından fazlasını kabul etmeyecektir. Ancak bu özellik herhangi bir geri bildirim sağlamaz. Yani kullanıcıyı uyarmak istiyorsanız JavaScript kodu yazmalısınız.
+=====
+min ve max nitelikleri, bir giriş alanı için minimum ve maksimum değerleri belirtir.
+min ve max "number, range, date, datetime-local, month, time ve week." input type lari ile calisir
+ 
+
+====
+multiple özelliği, boolean türünde bir özelliktir.
+Tanımlandığında giriş alanı için birden fazla değer girebilmeyi belirtir.
+Bu özellik şu giriş alanları ile çalışır: email ve file.
+ 
+
+===
+Pattern özelliği=> giriş alanına girilen değer ile regexp değerinin denetlenmesini belirtir.
+Not: Pattern özelliği şu giriş alanları ile çalışır: text, search, url, tel, email ve password
+Giriş alanına girilecek bilgi açıklaması için Standart title özelliğini kullanın.
+ 
+
+orneker 
+<form action="demo.php">
+  Ülke Kodu: <input type="text" name="ulkekodu" pattern="[A-Za-z]{3}" title="3 Karakterli Ülke Kodu">
+  <input type="submit" value="Gönder">
+</form>
+Eğer kullanıcının 1 ile 9 arasında sadece bir rakam girmesini istiyorsanız pattern attribute’unu kullanabilirsiniz.
+<input
+  type="text"
+  pattern="[1,9]{1}"
+  title="1 ile 9 arasında bir rakam giriniz."
+/>
+======
+[0-9]{4}  ===0 ile 9 arasında 4 tane rakam
+[1-9][0-9]{4}  ===ilki 1’den büyük olmak şartı ile 5 tane rakam
+(?=._\d)(?=._[a-z])(?=.\*[A-Z]).{8,}  ===En az biri rakam, biri büyük ve biri küçük harf olmak üzere en az 8 karakter
+.{8,}  ===8 veya daha fazla karakter
+[a-z]{3}===  Üç küçük harf
+[A-Z]{3} ===Üç büyük harf
+[A-Za-z]{3} ===Üç küçük veya büyük harf
+[A-Za-z]{3,8} ===En az 3 an fazla 8 büyük veya küçük harf
+[A-Z]{1}[0-9]{1}  ===1 büyük harf ve 1 rakam
+[ABC]{1} ====A,B ve C harflerinden sadece biri
+[^'\x22]+ ==== ’ ve “ karakterlerini engelle
+^A === A ile başlamalı
+A\$ ===A ile bitmeli
+^A[a-zA-Z]{2}Z\$ ====A ile başlayıp Z ile biten 4 harfli
+https?://.+ ==== http:// veya https:// içermeli
+[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}\$  ===E-Posta Adresi
+[a-z]{4,8}  =====En az 4 en fazla 8 tane küçük harf
+
+Regex Cheatsheet
+Aşağıdaki temel regex elementlerini kullanarak kendinize özel regex tanımlamanızı yapıp, input’larda kullanabilirsiniz.
+====
+. herhangi bir karakter
+\w \d \s kelime, digit,
+\W \D \s kelime değil rakam
+[abc] a, b veya c
+[^abc] a,b veya c hariç
+[a-g] a ile g arasında harf
+
+regexr.com‘u diğer regex’ler için ziyaret edebilirsiniz.
+=====
+Placeholder özelliği giriş alanın girilmesi düşünülen değer ile ilgili açıklayıcı kısa ipucu belirtir.
+İpucu giriş alanında görüntülenir ve odaklanıldığında kaybolur veya pasifleşir.
+Placeholder özelliği şu giriş alanları ile çalışır: text, search, url, tel, email ve password.
+input> placeholder özelliğini Internet Explorer hariç popüler tarayıcılar desteklemektedir.
+ 
+
+====
+Required özelliği boolean türünde bir özelliktir.
+Bu özellik tanımlandığında form gönderilmeden önce giriş alanının doldurulması gerektiğini belirtir.
+Required özelliği şu giriş alanlar ile çalışabilir: text, search, url, tel, email, password, date pickers, number, checkbox, radio ve file.
+soz dizimi
+ <input required>
+- <input required="required">
+- <input required="">
+====
+Size özelliği => <input> etiketinin genişliğini karakter sayısı olarak belirtir.
+Not: Size özelliği şu giriş elemanları ile kullanılır: text, search, tel, url, email ve password.
+İpucu: <input> etiketininin karakter sayısını belirtmek için maxlength özelliğini kullanın.\<input size=" sayı ">
+====
+Src özelliği=> gönder düğmesi olarak kullanılacak görüntünün URL adresini belirtir.
+Not: Src özelliği sadece type="image" özelliği ile kullanılabilir.
+<input src=" URL ">
+ 
+=====
+Step özelliği =>giriş alanı için artış / eksiliş sayısı belirtir.
+Örnek: Bu özellik step="4" olarak belirtilirse ...-4, 0, 4, 8... giriş alanı artış veya eksiliş 4'er olarak olacaktır.
+İpucu: Step özelliği max ve min özellikleri ile birlikte kontrol altında tutularak kullanılabilir.
+Step özelliği şu özellikler ile kullanılabilir: number, range, date, datetime, datetime-local, month, time ve week.
+ 
+===
+Value özelliği => giriş alanının değerini belirtir.
+Value özelliği farklı türler için farklı anlamdadır:
+- "button", "reset" ve "submit" için butonun üzerindeki yazıyı belirtir.
+- "text", "password" ve "hidden" için giriş alanının başlangıç(varsayılan) değerini belirtir.
+- "checkbox", "radio" ve "image" için gönderilen değeri belirtir.
+Not: Value özelliği "checkbox" ve "radio" değerleri için mutlaka tanımlanmalıdır.
+
+Not: Value özelliği "file" değeri ile kullanılamaz.
+====
+Width özelliği=> <input> etiketinin genişliğini belirtir.
+Not: Width özelliği sadece type="image" tanımlaması ile kullanılabilir.
+İpucu: Daima görüntüleriniz için yükseklik(height) ve genişlik(width) özelliklerini belirtin. Bu özellikler tanımlı ise sayfa yüklendiğinde görüntü için gerekli alan ayrılır. Özellikler tanımlanmaz ise tarayıcı resmin boyutunu algılamaz ve görüntü yüklenirken sayfa düzeninde kaymalar olabilir.
+
+
